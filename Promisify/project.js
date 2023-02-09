@@ -1,20 +1,3 @@
-
-
-// export function promisify(func) {
-//   return function() {
-//     return new Promise((resolve, reject) => {
-//       try {
-//         func(resolve);
-//       } catch(e) {
-//         reject(e);
-//       }
-//     })
-//   }
-// }
-
-// const promisified = promisify(getFruits);
-// promisified().then(res => console.log(res));
-
 export function promisify(func) {
   return function (...args) {
     return new Promise((resolve, reject) => {
