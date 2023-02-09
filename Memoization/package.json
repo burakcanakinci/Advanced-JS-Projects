@@ -1,0 +1,13 @@
+{
+  "name": "memoize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "dependencies": {
+    "chai": "4.3.6",
+    "chai-spies": "1.0.0",
+    "uuid": "9.0.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
