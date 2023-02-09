@@ -110,22 +110,3 @@ export function promisify(func) {
     });
   };
 }
-
-
------------------------------------------------
-
-Bu arada textte adam sana hazır callback fonskiyonunu vermiş
-adder diye iki sayıyı toplayan üçünçü parametresi başka bir
-callback fonksiyon oda error handling için eğer ikinci parametre
-kullanıcı tarafından sayı dışında başka tipte verilirse bu sefer
-error handler fonksiyonu çalışıyor Adam sana diyor ki bu fonskiyonuna
-promise wrapper bir fonksiyon oluşturup bu adder fonksiyonunu içine al
-Bu sefer bu callback fonskiyonunu promise wrapper fonksiyonu ile sarmalarsan
-şöyle çalışıcak iki parametre sayı gelirse promise resolved olucak eğer
-bir parametre sayı dışında değer gelirse promise reject edilecek ve promisin
-koyduğu hata çıkıcak catch bloğunda
-Callback fonskiyonunu çalışabilmesi için üçüncü parametre olarak verilen
-handleErrorAndValue callback fonksiyonunu yazman gerekiyor yani error olduğunda
-napsın diye console. log hatalı giriş diyebilir mesela
-Ayrıca callback fonksiyonunu en sonda çağrırıken "this" kullanman lazım
-Bütün texti çevirdim okumana gerek yok
